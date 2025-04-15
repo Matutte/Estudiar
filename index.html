@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiar - Tu Plataforma de Aprendizaje</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            background-image: url('Salon.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px; /* Ancho ligeramente mayor */
+            margin: 30px auto; /* Más margen superior e inferior */
+            padding: 30px; /* Más padding interno */
+            /* background-color: rgba(255, 255, 255, 0.95); Fondo blanco semi-transparente */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+            border-radius: 12px; /* Bordes más redondeados */
+        }
+
+        .hero {
+            background-color: rgba(0, 123, 255, 0.1); /* Azul primario suave */
+            padding: 3em; /* Más padding */
+            margin-bottom: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #007bff; /* Azul primario */
+            margin-bottom: 1em;
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .subject-overview h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 2em;
+            font-size: 1.8em;
+        }
+
+        .subject-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Columnas más anchas */
+            gap: 20px;
+            text-align: center;
+        }
+
+        .subject-links a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff; /* Fondo blanco para los enlaces */
+            padding: 20px; /* Más padding */
+            border-radius: 8px; /* Bordes más redondeados */
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transiciones suaves */
+        }
+
+        .subject-links a:hover {
+            transform: translateY(-5px); /* Ligeramente elevado al pasar el ratón */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el ratón */
+            background-color: #f9f9f9; /* Fondo ligeramente gris al pasar el ratón */
+        }
+
+        .subject-links img {
+            max-width: 80px; /* Tamaño de imagen un poco menor */
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .subject-links h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #007bff;
+            font-size: 1.2em;
+        }
+
+        .subject-links p {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.5; /* Mejor legibilidad */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h2>Bienvenido a Estudiar</h2>
+            <p>Encuentra recursos de aprendizaje de alta calidad para diversas materias.</p>
+            <p>¡Explora nuestros apartados y comienza a aprender hoy mismo!</p>
+        </section>
+
+        <section class="subject-overview">
+            <h2>Explora nuestras materias:</h2>
+            <div class="subject-links">
+                <a href="matematicas.html" class="subject-link-container">
+                    <img src="Matematicas.jpg" alt="Matemáticas">
+                    <h3>Matemáticas</h3>
+                    <p>Álgebra, Cálculo, Geometría y más.</p>
+                </a>
+                <a href="ciencias.html" class="subject-link-container">
+                    <img src="Ciencias.jpg" alt="Ciencias">
+                    <h3>Ciencias</h3>
+                    <p>Biología, Química, Física y Ciencias de la Tierra.</p>
+                </a>
+                <a href="historia.html" class="subject-link-container">
+                    <img src="Historia.png" alt="Historia">
+                    <h3>Historia</h3>
+                    <p>Historia Universal, Argentina, Antigua y Contemporánea.</p>
+                </a>
+                <a href="lenguaje.html" class="subject-link-container">
+                    <img src="Lneguaje.png" alt="Lenguaje">
+                    <h3>Lenguaje</h3>
+                    <p>Gramática, Literatura, Ortografía y Redacción.</p>
+                </a>
+                <a href="programacion.html" class="subject-link-container">
+                    <img src="Programacion.png" alt="Programacion">
+                    <h3>Programacion</h3>
+                    <p>Fundamentos, Python, Base de Datos, Algoritmos y estructura de datos</p>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas - Estudiar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .subject-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Matemáticas</h1>
+        <p>Explora el mundo de los números y las formas.</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Contenido de Matemáticas</h2>
+            <p>Aquí encontrarás una breve descripción de las principales áreas de las matemáticas.</p>
+
+            <div class="subject-info">
+                <div id="algebra-info" class="info-card">
+                    <h3>Álgebra</h3>
+                    <p>Estudio de las estructuras algebraicas, ecuaciones, polinomios y funciones. Fundamental para la resolución de problemas y el desarrollo del pensamiento abstracto.</p>
+                </div>
+
+                <div id="calculo-info" class="info-card">
+                    <h3>Cálculo</h3>
+                    <p>Rama que se centra en el estudio del cambio y el movimiento continuo, a través de conceptos como límites, derivadas e integrales. Es esencial en ciencias e ingeniería.</p>
+                </div>
+
+                <div id="geometria-info" class="info-card">
+                    <h3>Geometría</h3>
+                    <p>Análisis de las formas, tamaños, posiciones relativas de figuras y las propiedades del espacio. Incluye geometría plana y del espacio, así como trigonometría y geometría analítica.</p>
+                </div>
+
+                <div id="estadistica-info" class="info-card">
+                    <h3>Estadística</h3>
+                    <p>Ciencia de recopilar, analizar, interpretar y presentar datos. Permite entender la variabilidad y tomar decisiones informadas basadas en la evidencia.</p>
+                </div>
+
+                <div id="trigonometria-info" class="info-card">
+                    <h3>Trigonometría</h3>
+                    <p>Estudio de las relaciones entre los lados y los ángulos de los triángulos, y de las funciones trigonométricas. Tiene aplicaciones en física, ingeniería y navegación.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

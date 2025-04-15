@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencias - Estudiar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .subject-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ciencias</h1>
+        <p>Descubre los principios fundamentales del universo.</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Contenido de Ciencias</h2>
+            <p>Aquí encontrarás una breve descripción de las principales áreas de las ciencias.</p>
+
+            <div class="subject-info">
+                <div id="biologia-info" class="info-card">
+                    <h3>Biología</h3>
+                    <p>Estudio de la vida y los organismos vivos, incluyendo su estructura, función, crecimiento, evolución, distribución y taxonomía.</p>
+                </div>
+
+                <div id="quimica-info" class="info-card">
+                    <h3>Química</h3>
+                    <p>Ciencia que estudia la composición, estructura, propiedades y reacciones de la materia.</p>
+                </div>
+
+                <div id="fisica-info" class="info-card">
+                    <h3>Física</h3>
+                    <p>Ciencia natural que estudia los componentes fundamentales del universo, las fuerzas e interacciones que ejercen y los resultados de estas interacciones.</p>
+                </div>
+
+                <div id="ciencias-tierra-info" class="info-card">
+                    <h3>Ciencias de la Tierra</h3>
+                    <p>Campo de las ciencias que estudia la estructura física, la constitución, la historia y los procesos de la Tierra.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

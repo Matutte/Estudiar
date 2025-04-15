@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación - Estudiar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .subject-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programación</h1>
+        <p>Desarrolla tus habilidades en el mundo del código.</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Contenido de Programación</h2>
+            <p>Explora los fundamentos y diversas áreas de la programación.</p>
+
+            <div class="subject-info">
+                <div id="fundamentos-info" class="info-card">
+                    <h3>Fundamentos de Programación</h3>
+                    <p>Conceptos básicos como variables, tipos de datos, estructuras de control (condicionales, bucles) y funciones.</p>
+                </div>
+
+                <div id="python-info" class="info-card">
+                    <h3>Python</h3>
+                    <p>Un lenguaje de programación versátil y de alto nivel, ideal para principiantes y utilizado en ciencia de datos, desarrollo web y más.</p>
+                </div>
+
+                <div id="web-info" class="info-card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación y mantenimiento de sitios web, incluyendo el frontend (HTML, CSS, JavaScript) y el backend (servidores, bases de datos).</p>
+                </div>
+
+                <div id="bases-datos-info" class="info-card">
+                    <h3>Bases de Datos</h3>
+                    <p>Sistemas para almacenar, organizar y gestionar grandes cantidades de datos de manera eficiente.</p>
+                </div>
+
+                <div id="algoritmos-info" class="info-card">
+                    <h3>Algoritmos y Estructuras de Datos</h3>
+                    <p>Diseño y análisis de algoritmos eficientes y la organización de datos para resolver problemas computacionales.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

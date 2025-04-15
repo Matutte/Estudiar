@@ -1,0 +1,179 @@
+/* estilos.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Un gris claro de fondo */
+    color: #343a40; /* Un gris oscuro para el texto */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #020202; /* Un azul primario */
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+nav {
+    background-color: #e9ecef; /* Un gris muy claro para la navegación */
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    color: #495057; /* Un gris más oscuro para los enlaces */
+    margin: 0 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.hero {
+    background-color: #f0f8ff; /* Un azul muy claro para la sección de bienvenida */
+    padding: 2.5em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #add8e6; /* Un borde azul claro */
+}
+
+.hero h2 {
+    color: #cc00ff;
+    margin-bottom: 0.75em;
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1.15em;
+    line-height: 1.7;
+}
+
+.subject-overview {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.subject-overview h2 {
+    color: #212529; /* Un gris oscuro */
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 1.75em;
+}
+
+.subject-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.subject-links a {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #eee;
+}
+
+.subject-links a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #f0f0f0;
+}
+
+.subject-links h3 {
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+.subject-links p {
+    font-size: 0.95em;
+    color: #6c757d; /* Un gris más claro */
+}
+
+.subject-section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.subject-section h2 {
+    color: #212529;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.subject-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subject-section li {
+    margin-bottom: 12px;
+}
+
+.subject-section li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.subject-section li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

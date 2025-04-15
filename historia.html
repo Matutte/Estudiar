@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - Estudiar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .subject-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historia</h1>
+        <p>Un viaje a través del tiempo y las civilizaciones.</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Contenido de Historia</h2>
+            <p>Aquí encontrarás una breve descripción de las principales áreas de la historia.</p>
+
+            <div class="subject-info">
+                <div id="historia-universal-info" class="info-card">
+                    <h3>Historia Universal</h3>
+                    <p>Estudio de los eventos, procesos y desarrollos históricos que han afectado a la humanidad en su conjunto.</p>
+                </div>
+
+                <div id="historia-argentina-info" class="info-card">
+                    <h3>Historia Argentina</h3>
+                    <p>Análisis del pasado de la República Argentina, desde sus orígenes hasta la actualidad.</p>
+                </div>
+
+                <div id="historia-antigua-info" class="info-card">
+                    <h3>Historia Antigua</h3>
+                    <p>Estudio de las primeras civilizaciones y sociedades humanas, desde la invención de la escritura hasta la caída del Imperio Romano de Occidente.</p>
+                </div>
+
+                <div id="historia-contemporanea-info" class="info-card">
+                    <h3>Historia Contemporánea</h3>
+                    <p>Análisis del período histórico que abarca desde la Revolución Francesa hasta nuestros días, caracterizado por grandes cambios sociales, políticos y tecnológicos.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

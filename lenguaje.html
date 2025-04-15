@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje - Estudiar</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .subject-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lenguaje</h1>
+        <p>Domina el arte de la comunicación.</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Contenido de Lenguaje</h2>
+            <p>Aquí encontrarás una breve descripción de las principales áreas del lenguaje.</p>
+
+            <div class="subject-info">
+                <div id="gramatica-info" class="info-card">
+                    <h3>Gramática</h3>
+                    <p>Estudio de las reglas y principios que gobiernan la estructura de las oraciones y la combinación de palabras.</p>
+                </div>
+
+                <div id="literatura-info" class="info-card">
+                    <h3>Literatura</h3>
+                    <p>Arte de la expresión escrita o hablada, que utiliza el lenguaje de manera estética y creativa.</p>
+                </div>
+
+                <div id="ortografia-info" class="info-card">
+                    <h3>Ortografía</h3>
+                    <p>Conjunto de normas que regulan la escritura de una lengua.</p>
+                </div>
+
+                <div id="redaccion-info" class="info-card">
+                    <h3>Redacción</h3>
+                    <p>Arte de escribir de forma clara, concisa y efectiva.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
