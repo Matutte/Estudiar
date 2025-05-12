@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Estudiar - Tu Plataforma de Aprendizaje</title>
+  <title>Sobre Nosotros - Estudiar</title>
   <style>
     * {
       box-sizing: border-box;
@@ -50,7 +50,7 @@
 
     header {
       padding: 20px 40px;
-      background: rgba(26, 26, 26, 0.9); /* Slightly transparent background for depth */
+      background: rgba(26, 26, 26, 0.9);
       position: sticky;
       top: 0;
       z-index: 10;
@@ -67,17 +67,17 @@
     }
 
     .logo img {
-      height: 50px; /* Adjust logo size */
+      height: 50px;
       transition: transform 0.3s ease;
-      border-radius: 5px; /* Optional: slight rounding for aesthetics */
+      border-radius: 5px;
     }
 
     .logo:hover img {
-      transform: scale(1.1); /* Subtle hover effect */
+      transform: scale(1.1);
     }
 
     .titulo-principal {
-      font-size: 2.5em; /* Reduced size for better balance */
+      font-size: 2.5em;
       font-weight: 900;
       background: linear-gradient(90deg, #00c6ff, #0072ff);
       -webkit-background-clip: text;
@@ -88,8 +88,8 @@
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
-      flex: 1; /* Allows title to take available space */
-      text-align: center; /* Center the title */
+      flex: 1;
+      text-align: center;
     }
 
     .titulo-principal::after {
@@ -122,7 +122,6 @@
       transform: translateY(-2px);
     }
 
-    /* Responsive Design for Header */
     @media (max-width: 768px) {
       .header-container {
         flex-direction: column;
@@ -131,11 +130,11 @@
       }
 
       .logo img {
-        height: 40px; /* Smaller logo on mobile */
+        height: 40px;
       }
 
       .titulo-principal {
-        font-size: 2em; /* Smaller title on mobile */
+        font-size: 2em;
       }
 
       .nav-links {
@@ -164,6 +163,11 @@
       100% { left: 125%; }
     }
 
+    @keyframes brillar {
+      0% { text-shadow: 0 0 10px rgba(0, 198, 255, 0.6); }
+      100% { text-shadow: 0 0 20px rgba(0, 198, 255, 0.8); }
+    }
+
     .container {
       max-width: 1000px;
       margin: 40px auto;
@@ -180,6 +184,13 @@
       margin-bottom: 50px;
     }
 
+    .hero h2 {
+      font-size: 2.5em;
+      color: #00c6ff;
+      text-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+      margin-bottom: 20px;
+    }
+
     .hero p {
       font-size: 1.3em;
       color: #ecf0f1;
@@ -187,120 +198,57 @@
       margin: 20px auto;
     }
 
-    .subject-overview h2,
-    .extra-sections h2,
-    .contact-form h2 {
+    .mission, .team {
+      margin-bottom: 50px;
+    }
+
+    .mission h2, .team h2 {
       text-align: center;
       font-size: 2.5em;
-      margin-bottom: 30px;
       color: #00c6ff;
-      text-shadow: 0 0 10px rgba(0,198,255,0.4);
+      text-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+      margin-bottom: 30px;
     }
 
-    .subject-links {
+    .team-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
     }
 
-    .subject-links div {
+    .team-card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
       opacity: 0;
       animation: fadeInUp 1s ease forwards;
     }
 
-    .subject-links div:nth-child(1) { animation-delay: 0.2s; }
-    .subject-links div:nth-child(2) { animation-delay: 0.4s; }
-    .subject-links div:nth-child(3) { animation-delay: 0.6s; }
-    .subject-links div:nth-child(4) { animation-delay: 0.8s; }
-    .subject-links div:nth-child(5) { animation-delay: 1s; }
-    .subject-links div:nth-child(6) { animation-delay: 1.2s; }
+    .team-card:nth-child(1) { animation-delay: 0.2s; }
+    .team-card:nth-child(2) { animation-delay: 0.4s; }
+    .team-card:nth-child(3) { animation-delay: 0.6s; }
 
-    .subject-links a {
-      text-decoration: none;
-      color: inherit;
-      background-color: #222;
-      padding: 20px;
-      border-radius: 15px;
-      display: block;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .subject-links a:hover {
+    .team-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
 
-    .subject-links img {
-      max-width: 120px;
+    .team-card img {
+      max-width: 100px;
+      border-radius: 50%;
       margin-bottom: 15px;
-      border-radius: 10px;
     }
 
-    .extra-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .extra-links a {
+    .team-card h3 {
+      font-size: 1.5em;
       color: #00c6ff;
-      font-weight: bold;
-      text-decoration: none;
-      background-color: #222;
-      padding: 15px 25px;
-      border-radius: 10px;
-      transition: background 0.3s, transform 0.2s;
     }
 
-    .extra-links a:hover {
-      background-color: #0072ff;
-      transform: scale(1.05);
-    }
-
-    .contact-form form {
-      max-width: 600px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      animation: fadeInUp 1s ease forwards;
-    }
-
-    .contact-form form label,
-    .contact-form form input,
-    .contact-form form textarea {
-      text-align: center;
+    .team-card p {
       font-size: 1em;
-    }
-
-    .contact-form form input,
-    .contact-form form textarea {
-      padding: 10px;
-      border: none;
-      border-radius: 10px;
-      font-family: 'Courier New', monospace;
-      background-color: #1a1a1a;
-      color: #fff;
-      box-shadow: inset 0 0 5px rgba(0, 198, 255, 0.2);
-    }
-
-    .contact-form button {
-      padding: 12px 25px;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .contact-form button:hover {
-      background: linear-gradient(90deg, #0072ff, #00c6ff);
-      transform: scale(1.05);
+      color: #ecf0f1;
     }
 
     footer {
@@ -322,7 +270,7 @@
       <h1 class="titulo-principal">Estudiar</h1>
       <nav class="nav-links">
         <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="about.html">Sobre Nosotros</a>
         <a href="contact.html">Contacto</a>
       </nav>
     </div>
@@ -331,48 +279,21 @@
 
   <div class="container">
     <section class="hero fadeIn">
-      <p>Encuentra recursos de aprendizaje de alta calidad para diversas materias. ¡Comienza tu viaje de aprendizaje ahora mismo!</p>
+      <h2>Sobre Nosotros</h2>
+      <p>Bienvenidos a Estudiar, tu plataforma de aprendizaje diseñada para inspirar y empoderar a estudiantes de todas las edades. Nuestra misión es hacer que el conocimiento sea accesible, atractivo y relevante.</p>
     </section>
 
-    <section class="subject-overview">
-      <h2>Explora nuestras materias:</h2>
-      <div class="subject-links">
-        <div><a href="matematicas.html"><img src="matematicas.jpg" alt="Icono de Matemáticas" /><h3>Matemáticas</h3><p>Álgebra, Cálculo, Geometría y más.</p></a></div>
-        <div><a href="ciencias.html"><img src="ciencias.jpg" alt="Icono de Ciencias" /><h3>Ciencias</h3><p>Biología, Química, Física y Ciencias de la Tierra.</p></a></div>
-        <div><a href="historia.html"><img src="historia.png" alt="Icono de Historia" /><h3>Historia</h3><p>Universal, Argentina, Antigua y Contemporánea.</p></a></div>
-        <div><a href="lenguaje.html"><img src="lenguaje.png" alt="Icono de Lenguaje" /><h3>Lenguaje</h3><p>Gramática, Literatura, Ortografía y Redacción.</p></a></div>
-        <div><a href="programacion.html"><img src="programacion.png" alt="Icono de Programación" /><h3>Programación</h3><p>Python, Bases de Datos, Algoritmos y más.</p></a></div>
-        <div><a href="musica.html"><img src="musica.jpg" alt="Icono de Música" /><h3>Música</h3><p>Teoría musical, instrumentos, historia de la música y más.</p></a></div>
-      </div>
+    <section class="mission fadeIn">
+      <h2>Nuestra Misión</h2>
+      <p>En Estudiar, creemos que la educación es la clave para transformar vidas. Nos esforzamos por proporcionar recursos de alta calidad en diversas materias, desde matemáticas hasta música, para que cada estudiante pueda alcanzar su máximo potencial. Nuestra plataforma combina tecnología innovadora con un enfoque centrado en el usuario para crear experiencias de aprendizaje únicas.</p>
     </section>
 
-    <section class="extra-sections">
-      <h2>Más de Estudiar:</h2>
-      <div class="extra-links">
-        <a href="testimonios.html">Testimonios de Usuarios</a>
-        <a href="noticias.html">Noticias y Actualizaciones</a>
-      </div>
-    </section>
 
-    <section class="contact-form">
-      <h2>Contáctanos</h2>
-      <form action="mailto:tucorreo@ejemplo.com" method="POST" enctype="text/plain">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </div>
 
   <footer>
     <p>© 2025 Estudiar - Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Scripts de partículas -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
     particlesJS("particles-js", {

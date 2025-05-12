@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonios de Usuarios - Estudiar</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2.5em;
+    }
+    .testimonios {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #333;
+      padding: 30px;
+      border-radius: 15px;
+    }
+    .testimonios p {
+      margin-bottom: 20px;
+    }
+    hr {
+      border: 1px solid #444;
+    }
+    .formulario {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #2c3e50;
+      padding: 30px;
+      border-radius: 15px;
+    }
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .formulario button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .formulario button:hover {
+      background: #2ecc71;
+    }
+    .volver {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .volver a {
+      color: #27ae60;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .volver a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Testimonios de Usuarios</h1>
+
+  <div class="testimonios" id="lista-testimonios">
+    <p>"Estudiar ha transformado mi forma de aprender. ¡Muy recomendado!" - <strong>Juan Pérez</strong></p>
+    <hr>
+    <p>"Gracias a Estudiar, ¡aprobar mis exámenes fue mucho más fácil!" - <strong>Camila Torres</strong></p>
+    <hr>
+    <p>"Lo uso todos los días para programar y practicar matemáticas." - <strong>Luis Fernández</strong></p>
+  </div>
+
+  <div class="formulario">
+    <h2>Agrega tu opinión:</h2>
+    <form id="formularioTestimonio">
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="mensaje">Tu testimonio:</label>
+      <textarea id="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <div class="volver">
+    <p><a href="index.html">← Volver a inicio</a></p>
+  </div>
+
+  <script>
+    document.getElementById("formularioTestimonio").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      if (nombre && mensaje) {
+        const contenedor = document.getElementById("lista-testimonios");
+
+        const nuevoTestimonio = document.createElement("div");
+        nuevoTestimonio.innerHTML = `<p>"${mensaje}" - <strong>${nombre}</strong></p><hr>`;
+        contenedor.appendChild(nuevoTestimonio);
+
+        document.getElementById("formularioTestimonio").reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
